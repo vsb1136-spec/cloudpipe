@@ -1,0 +1,11 @@
+{
+  "name": "cloudpipe",
+  "version": "1.0.0",
+  "description": "CI/CD pipeline demo: Dockerized app auto-deployed to AWS EC2",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test.js"
+  },
+  "license": "MIT"
+}
