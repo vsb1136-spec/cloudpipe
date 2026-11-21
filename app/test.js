@@ -7,7 +7,7 @@ let base;
 test.before(() => new Promise((r) => server.listen(0, () => { base = `http://localhost:${server.address().port}`; r(); })));
 test.after(() => server.close());
 
-test("GET /health returns okk", async () => {
+test("GET /health returns ok", async () => {
   const res = await fetch(`${base}/health`);
   assert.strictEqual(res.status, 200);
   assert.deepStrictEqual(await res.json(), { status: "ok" });
